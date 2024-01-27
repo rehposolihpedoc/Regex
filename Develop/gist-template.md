@@ -1,10 +1,21 @@
-# Title (replace with your title)
+# Nested Groups Regular Expression Tutorial
 
-Introductory paragraph (replace this with your text)
+Nested group regular expressions are a great way to search strings. In this tutorial we will be using an HTML <span> element as the string.
 
 ## Summary
+The regular expression variable regExp will be applied to the string variable using the .match() method: 
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+let string = '<span class="foo">';
+
+let regExp = /<(([a-z]+)\s*([^>]*))>/;   // THIS IS OUR REGULAR EXPRESSION
+
+let result = string.match(regExp);
+console.log(result[0]); // <span class="foo">
+console.log(result[1]); // span class="foo"
+console.log(result[2]); // span
+console.log(result[3]); // class="my"
+
+- Expressions: 
 
 ## Table of Contents
 
@@ -23,6 +34,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+ ^ The caret – matches at the beginning of the text.
 
 ### Quantifiers
 
