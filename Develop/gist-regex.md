@@ -11,7 +11,7 @@ Nested Groups
 
 Did you know parentheses can be nested? In this case the numbering also goes from left to right.
 
-For instance, when searching a tag in <span class="foo"> we may be interested in:
+For instance, when searching a tag in `<span class="foo">` we may be interested in:
 
 - Tag content as a whole: span class="my".
 - Tag name: span.
@@ -42,7 +42,7 @@ See how the regular expression is numbered below from left to right:
  ^ The caret – matches at the beginning of the text.
 
 ### Quantifiers
- Quantifiers quantify how many times a specific part of your regular expression should be repeated.  They are needed every time you want to repeat something in a regex such as an individual character, a character class or a sub-expression.
+Quantifiers quantify how many times a specific part of your regular expression should be repeated.  They are needed every time you want to repeat something in a regex such as an individual character, a character class or a sub-expression.
 
  - "*" was used in this expression which is syntactic sugar for "{0,}" quantifier
 
